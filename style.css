@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 85%;
+    height: 90%;
+    display: flex;
+    flex-direction: row;
+}
+.c1{
+    width: 50%;
+    height: 100%;
+}
+span{
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+p{
+    font-size: 23px;
+    font-weight: 600;
+    color: gray;
+}
+p a{
+    text-decoration: none;
+    color: gray;
+}
+img{
+    width: 500px;
+    height: 420px;
+    margin-top: 75px;
+}
+.c2{
+    width: 50%;
+    height: 100%;
+}
+label{
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+input{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 16px;
+    width: 70%;
+}
+h4{
+    margin: 10px;
+}
+.ser{
+    width:70% ;
+    height: 90px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.r1,.r2{
+    width: 50%;
+}
+.r1 label,.r2 label{
+    padding: 0px;
+    font-weight: normal;
+    font-size: 16px;
+}
+.r1 input,.r2 input{
+    padding: 0px;
+    margin: 0px;
+    width: 30px;
+}
+input[type="submit"]{
+    background-color:#e45015;
+    width:fit-content;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+@media screen and (max-width:1024px){
+    .container{
+        height: fit-content;
+    }
+    .box{
+        height: fit-content;
+    }
+    .c1{
+        height: fit-content;
+    }
+    .c2{
+        height: fit-content;
+    }
+    .ser{
+        height: fit-content;
+        width: 100%;    
+        flex-direction: column;
+    }
+    img{
+        width:320px;
+        height: 300px;
+        margin: 0px;
+        margin-left: -40px;
+        object-fit: cover;
+    }
+    input{
+        width: 90%;
+    }
+    .r1,.r2{
+        width: 100%;
+    }
+}
+@media screen and (max-width:630px){
+    .container{
+        height: fit-content;
+    }
+    .box{
+        height: fit-content;
+        flex-direction: column;
+        row-gap: 55px;
+    }
+    .c1{
+        height: fit-content;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .c2{
+        height: fit-content;
+        width: 90%;
+    }
+    input{
+        width: 100%;
+    }
+    span{
+        font-size: 35px;
+        text-align: center;
+    }
+    p{
+        font-size: 20px;
+        text-align: center;
+    }
+    img{
+        margin: auto;
+    }
+}
